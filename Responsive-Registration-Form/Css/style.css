@@ -1,0 +1,124 @@
+body {
+    background-color: rgba(219, 221, 227, 0.507);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "open sans", sans-serif;
+}
+
+form {
+    min-height: 500px;
+    max-width: 310px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 0.7rem;
+    border-top: 5px solid rgba(255, 183, 0, 0.938);
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -9px 9px 11px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+h1 {
+    margin: 20px 0px;
+}
+
+.container {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+}
+
+input {
+    width: 100%;
+    border: none;
+    padding: 5px;
+    font-size: 0.8rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+    margin-left: 0px;
+    accent-color: purple;
+}
+
+label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 12px;
+    font-weight: 600;
+    font-size: 0.7rem;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+.fa-solid,
+input {
+    border: 1.35px solid rgba(128, 128, 128, 0.263);
+}
+
+.fa-solid {
+    border-right: none;
+    padding: 8px 7px;
+}
+
+.rowC {
+    gap: 25px;
+}
+
+.row {
+    display: flex;
+}
+
+select {
+    margin-bottom: 3px;
+    padding: 7px;
+    border: 1.34px solid rgba(128, 128, 128, 0.263);
+    color: rgba(92, 91, 91, 0.854);
+}
+
+span {
+    margin-top: 15px;
+    align-self: flex-start;
+}
+
+button {
+    margin: 25px 0px 30px 0px;
+    padding: 8px;
+    border: none;
+    color: white;
+    background-color: rgba(255, 183, 0, 0.938);
+    transition: all 0.14s ease-in-out;
+    box-shadow: -3px 9px 13px 0px rgba(0, 0, 0, 0.1); 
+
+}
+
+button:hover {
+    background-color: rgba(237, 171, 2, 0.938);
+    
+}
+
+input:focus:not([type="checkbox"], [type="radio"]) {
+    outline: none;
+    border-bottom: 2px solid rgb(9, 9, 90);
+    box-shadow: -3px 9px 13px 0px rgba(0, 0, 0, 0.1);
+}
+
+select:focus {
+    outline: none;
+    border-color: rgb(9, 9, 90);
+    box-shadow: -3px 9px 13px 0px rgba(0, 0, 0, 0.1);
+} 
+.fa-solid{
+margin-right: 0;
+}
+/* 
+.container:focus{
+    box-shadow:  -7px 4px 11px 3px rgba(0, 0, 0, 0.1)
+
+}   */
+/* how to edit smth based on smth else or a group tog is it js ? */

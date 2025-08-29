@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <form action="index.html" method="get">
+        <h1> Responsive Registration Form</h1>
+        <div class="container">
+            <label class="fa-solid fa-envelope" for="email"></label><input id="email" type="email" name="UserEmail" placeholder="Email">
+        </div>
+        <div class="container">
+            <label class="fa-solid fa-lock" for="pass"></label>
+            <input type="password" name="UserPassword" id="pass" placeholder="Password">
+        </div>
+        <div class="container">
+            <label class="fa-solid fa-lock" for="Rpass"></label>
+            <input type="password" name="UserPasswordTrial" id="Rpass"  placeholder="Re-type Password">
+        </div>
+        <div class="container rowC">
+            <div class="row">
+                <label class="fa-solid fa-user" for="first"></label>
+                <input type="text" name="FirstName" id="first" placeholder="First Name">
+            </div>
+            <div class="row">
+                <label class="fa-solid fa-user" for="last"></label>
+                <input type="text" name="LastName" id="last" placeholder="Last Name">
+            </div>
+        </div>
+        <div class="container row">
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+        </div>
+        <select name="Country" id="country">
+            <option disabled selected> Select a country </option>
+            <option value="egypt"> Egypt </option>
+            <option value="lebanon"> Lebanon </option>
+        </select>
+        <span><label><input type="checkbox"> I agree with terms and conditions</label></span>
+        <span><label><input type="checkbox"> I want to receive the newsletter</label></span>
+        <button type="submit"> Register</button>
+
+
+
+
+
+
+    </form>
+</body>
+
+</html>

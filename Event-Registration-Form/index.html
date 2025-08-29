@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./Css/all.min.css">
+</head>
+
+<body>
+    <form action="index.html" method="get">
+        <h1> Event Registration</h1>
+        <h2> Register with us to get more details</h2>
+        <label>Name</label>
+        <div class="nameContainer">
+            <div class="nameInput">
+                <span><label class="fa-regular fa-user" for="firstName"></label><input class="trial" type="text"
+                        name="firstname" id="firstName"></span>
+                <label>First</label>
+            </div>
+            <div class="nameInput">
+                <input type="text">
+                <label>Last</label>
+            </div>
+        </div>
+        <label>Email</label>
+        <span class="e"><label class="fa-regular fa-envelope" for="emailAddress"></label><input type="text"
+                id="emailAddress" name="emailAddress"></span>
+        <label>Phone</label>
+        <span class="e"><label class="fa-solid fa-mobile-screen-button" for="phone"></label><input type="text"
+                name="phoneNumber" id="phone"></span>
+        <label>Topic</label>
+        <select>
+            <option disabled selected value=""></option>
+            <option value="">Cyber security</option>
+            <option value="">Advanced Programming Techniques</option>
+        </select>
+        <label>Preferred Slot</label>
+        <select>
+            <option disabled selected value=""> </option>
+            <option value="">Friday, 3pm to 7pm</option>
+            <option value="">Sunday, 6pm to 10pm</option>
+        </select>
+        <button> Sign me up</button> 
+    </form>
+</body>
+
+</html>
