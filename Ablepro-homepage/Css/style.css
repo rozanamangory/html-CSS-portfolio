@@ -176,16 +176,11 @@ div.hero {
   width: 90%;
   margin: auto;
   position: relative;
-  /* top: 0px; */
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
-  height: 120vh;
   padding: 90px 80px;
   padding-bottom: 20px;
   margin-top: 10px 0px;
-  /* padding-top: 90px; */
-  /* background-color: #2ca87f; */
 }
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -392,8 +387,9 @@ section.flex {
 }
 
 .techsContainer {
-  height: 300vh;
+  min-height: 310vh;
   /* height: 1900px; */
+  padding: 50px;
   margin: 10px 40px;
   justify-content: space-evenly;
   align-items: center;
@@ -402,6 +398,8 @@ section.flex {
 }
 
 .boxes {
+  flex-direction: column;
+  justify-content: flex-start;
   width: 350px;
   height: 310px;
   border-radius: 12px;
@@ -434,6 +432,15 @@ section.flex {
 .boxes h4 {
   /* font-size: 1.25rem; */
   margin: 6px 0 10px;
+}
+
+.comboContainer button {
+  width: fit-content;
+
+}
+
+.comboContainer img {
+  padding: 15px 0px;
 }
 
 .boxBtns,
@@ -511,13 +518,11 @@ section.flex {
 
 /*-------------------------- */
 section.combo {
-  /* background-color: #bd8ae7; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 150vh;
-  padding: 150px 0px;
-  margin-bottom: 60px;
+  padding: 120px 0px;
+  padding-bottom: 20px;
 }
 
 .comboTitleBox {
@@ -536,6 +541,11 @@ section.combo {
   gap: 25px;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.comboContainer p {
+  margin: 10px 0px;
 }
 
 .comboH2 {
@@ -560,9 +570,12 @@ section.combo {
 }
 
 .combo .boxes {
-  /* width: 550px; */
-  height: 492px;
+  gap: 20px;
+  width: 550px;
+  /* height: 492px; */
+  min-height: 450px;
   padding: 25px;
+  padding-bottom: 50px;
 }
 
 .boxes h5 {
@@ -570,16 +583,20 @@ section.combo {
   font-weight: 600;
   line-height: 1.2;
   margin-top: 5px;
-  margin-bottom: 16px;
+  margin-bottom: 0px;
 }
 
-.c {
-  /* overflow: clip; */
-  /* width: 500px; */
-  /* height: 280px; */
-  margin-bottom: 15px;
-  max-width: 300px;
+.combo .boxes p {
+  margin: 0px;
+  font-size: 0.9rem;
+  line-height: 0.5cm;
 }
+
+.combo .boxes img {
+  padding: 0px;
+}
+
+.c {}
 
 .grey.d {
   margin-bottom: 37px;
@@ -587,22 +604,23 @@ section.combo {
 
 .combo button {
   font-weight: 500;
+
 }
 
 section.c2.combo {
-  padding: 80px 0px;
+  padding-top: 70px;
   align-items: center;
-  /* height: 180vh; */
-  margin-bottom: 20px;
 }
 
 section.c2.combo img {
   width: 770px;
   height: 565px;
+  width: 100%;
 }
 
 .combo .herobtns {
   margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 .combo .livebtn {
@@ -612,7 +630,7 @@ section.c2.combo img {
 /* ---------------------------------------- */
 section.concept {
   background-color: #4680ff;
-  height: 200vh;
+  /* height: 200vh; */
   padding-bottom: 0;
   overflow: hidden;
   margin-bottom: 0;
@@ -637,10 +655,10 @@ section.concept {
   width: 100%;
   /* justify-content: center; */
   /* justify-content: space-between; */
-
+  height: fit-content;
   align-items: center;
   gap: 40px;
-  height: 600px;
+  /* height: 600px; */
 }
 
 .anchorsBox {
@@ -756,14 +774,18 @@ section.whiteBg {
   font-size: 20px;
 }
 
-/* .doubleContainer {
-    flex-direction: column;
-    gap: 15px;
-} */
+.doubleTitleBox {
+  width: 600px;
+  padding-bottom: 30px;
+}
+
+.doubleTitleBox span {
+  color: #4680ff;
+}
+
 
 /* ////////////////////////// */
-.belt {
-  /** why the same class  has two difference style  blockes in two different place**/
+/* .belt {
   position: relative;
   top: 60px;
   width: 100%;
@@ -771,7 +793,7 @@ section.whiteBg {
   border-right: 1px solid rgb(114, 114, 114);
   margin: 20px 0px;
   overflow-x: scroll;
-}
+} */
 
 
 
@@ -783,10 +805,8 @@ section.double {
   justify-content: center;
   align-items: center;
   padding: 100px 0px;
-  gap: 40px;
+  gap: 10px;
 }
-
-
 
 
 .messages {
@@ -800,11 +820,13 @@ section.double {
   align-items: center;
   background: #fff;
   border-radius: 12px;
-  padding: 30px 25px;
+  padding: 20px 25px;
+  padding-right: 15px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   margin: 10px;
   cursor: pointer;
   flex-shrink: 0;
+  /* max-width: 300px; */
   /*the flex container makes the width of the message flexable and this prevented the scrobar to work because the width is always enough, shrink zero prevents this flexabilit **/
 }
 
@@ -823,6 +845,9 @@ section.double {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  /*  */
+  width: 350px;
+
 }
 
 .message p {
@@ -911,7 +936,7 @@ section.companies {
 }
 
 .companies .comboTitleBox {
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .companies .comboTitleBox h2 {
@@ -922,12 +947,16 @@ section.companies {
   padding: 10px 40px;
   gap: 30px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .compbtns img {
+  width: 200px;
+  height: 57px;
   transition: all 80ms cubic-bezier(0.37, 0.24, 0.53, 0.99);
   opacity: 0.4;
   cursor: pointer;
+  padding: 0px;
 }
 
 .compbtns img:hover {
@@ -969,6 +998,7 @@ footer {
 
 /* ------ */
 .collectionContainer {
+  /* width: 100%; */
   justify-content: space-between;
   justify-content: center;
   gap: 30px;
@@ -988,34 +1018,34 @@ footer {
   align-items: flex-start;
   text-align: left;
   /* width: 30%; */
-  width: 300px;
+  /* width: 300px; */
 }
 
 /* --------------------- */
 .collectionContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 40px 30px;
   background-color: #f8f9fa;
-  flex-wrap: wrap;
   gap: 25px;
+  margin: 0;
 }
 
 .secCollection .flex {
-  min-width: 120px;
+  /* min-width: 120px; */
 }
 
 .able {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  width: 350px;
-  padding: 10px;
+  /* width: 350px; */
+  /* padding: 10px; */
 }
 
 .able img {
   margin-bottom: 10px;
-  padding-left: 0;
+  padding: 0;
 }
 
 .able p {
@@ -1092,61 +1122,34 @@ footer {
 }
 
 /* ---------------------- */
-/* @keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%); /* adjust depending on how many cards */
-/* }
-}
 
-.testimonial {
-  flex: 0 0 auto;
-  min-width: 300px;
-  background: white;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-} */
-/* .beltsContainer {
-  overflow: hidden;
-  width: 100%;
-} */
-
-/* .belts {
-  display: flex;
-  gap: 20px;
-  animation: scroll 20s linear infinite;
-}
-
-.testimonial {
-  flex: 0 0 auto;
-  min-width: 250px;
-  background: white;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-} */
-
-/* Keyframes for looping effect 
-/* @keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%); /* scroll half (since we duplicated) 
-  }
-}  
 /* ------------------------------------------- */
-@media (max-height: 550px) {
-  div.hero {
-    margin-bottom: 100px;
+@media (width < 576px) {
+
+*{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+  .collectionContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    gap: 10;
   }
 
-  .belt {
-    margin-top: 50px;
+  .secCollection {
+    /* justify-content: center; */
+    gap: 10px;
   }
+
+  .able p {
+    width: fit-content;
+  }
+    .foot {
+    padding: 0px;
+  }
+
 }
 
 /* (576px <= width<= 767px) */
@@ -1187,10 +1190,74 @@ footer {
     margin: 0px;
     padding: 0;
   }
+
+  section.combo {
+    padding-top: 40px;
+  }
+
+  .comboContainer .boxes {
+    min-height: 500px;
+    padding-bottom: 20px;
+    /* height: fit-content; */
+  }
+
+  .c2 .comboTitleBox {
+    width: 580px;
+  }
+
+  section.c2.combo img {
+    width: 550px;
+    height: 420px;
+  }
+
+  /* .conceptContainer{
+    flex-wrap:wrap ;
+  } */
+  .conceptContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .conceptContainer img {
+    padding-left: 150px;
+    width: 800px;
+  }
+
+  section.whiteBg {
+    padding: 30px 140px;
+  }
+
+  .whiteContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .whiteContainer .herobtns {
+    flex-direction: row;
+    align-self: flex-start;
+    padding-bottom: 20px;
+  }
+
+  .doubleTitleBox {
+    width: 500px;
+  }
+
+  section.double {
+    padding: 40px;
+  }
+
+  .collectionContainer {
+    flex-direction: column;
+    padding: 70px 110px; 
+
+  }
+
+
 }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (768px <=width<=991px) {
+@media (768px <=width< 992px) {
   nav .container {
     padding: 10px 10px;
     gap: 10px;
@@ -1245,10 +1312,57 @@ footer {
   section.flex {
     /* height: 600vh; */
   }
+
+  .comboContainer .boxes {
+    width: 335px;
+    min-height: 400px;
+    padding-bottom: 20px;
+    /* height: fit-content; */
+  }
+
+  .c2 .comboTitleBox {
+    width: 520px;
+  }
+
+  section.c2.combo img {
+    width: 550px;
+    height: 470px;
+  }
+
+  section.whiteBg {
+    padding: 40px 150px;
+  }
+
+  .doubleTitleBox {
+    width: 450px;
+  }
+
+  section.double {
+    padding: 40px;
+  }
+
+  .collectionContainer {
+    justify-content: center;
+    align-content: center;
+    padding: 70px 150px;
+    gap: 0;
+  }
+
+  .secCollection {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .able p {
+    width: 220px;
+  }
+    .foot {
+    padding: 70px 140px;
+  }  
 }
 
 /* // Large devices (desktops, 992px and up) */
-@media (992px <=width<=1199px) {
+@media (992px <=width <1200px) {
   nav .container {
     padding: 10px 25px;
   }
@@ -1261,10 +1375,48 @@ footer {
     width: 710px;
     margin: 0px;
   }
-}
 
+  .comboContainer .boxes {
+    width: 455px;
+    padding-bottom: 20px;
+  }
+
+  .anchorsBox {
+    padding-left: 40px;
+  }
+
+  .supportContainer {
+    padding: 70px 130px;
+    padding-top: 0;
+  }
+
+  .collectionContainer {
+    justify-content: center;
+    padding: 40px 90px;
+    gap: 10px;
+  }
+
+  .secCollection {
+    justify-content: unset;
+    gap: 80px;
+  }
+
+  .foot {
+    padding: 15px 115px;
+
+  }
+}
+@media ( width >=1200px){
+.collectionContainer{
+padding: 40px 100px ;
+/* width: 1050px;    */
+}
+.able{
+width:350px; 
+}
+}
 /* // X-Large devices (large desktops, 1200px and up) */
-@media (1200px <=width<=1399px) {
+@media (1200px <= width < 1400px) {
   nav .container {
     padding: 10px 40px;
   }
