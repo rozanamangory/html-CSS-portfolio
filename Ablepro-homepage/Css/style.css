@@ -785,15 +785,7 @@ section.whiteBg {
 
 
 /* ////////////////////////// */
-/* .belt {
-  position: relative;
-  top: 60px;
-  width: 100%;
-  gap: 1px;
-  border-right: 1px solid rgb(114, 114, 114);
-  margin: 20px 0px;
-  overflow-x: scroll;
-} */
+
 
 
 
@@ -866,65 +858,6 @@ section.double {
   font-size: 12px;
 }
 
-/* .belts {
-    padding-left: 100px;
-    width: 100%;
-    gap: 10px;
-    margin: 20px 50px;
-    overflow-x: hidden;
-    overflow-x: scroll;
-    white-space: nowrap;   
-    padding-bottom: 10px;
-    scrollbar-width: thin; 
-    flex-wrap: nowrap;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-    margin-bottom: 20px;
-    overflow-x: scroll;
-}
-
-.message {
-   
-    width: 430px;
-    white-space: wrap;
-    width: 380px;
-    height: 130px;
-    
-}
-
-.message img {
-
-    align-self: self-start;
-
-
-}
-
-.message .textBlock {
-
-    flex: 1;  
-    
-    
-    
-    .message p {
-    font-size: 14px;
-    line-height: 1.5;
-
-    margin: 0 0 10px 0;
-    overflow-wrap: break-word;
-}
-
-.message .avName {
-
-    margin: 0;
-}
-
-
-
-    
-    
-    */
 
 /* ---------------- */
 section.companies {
@@ -1198,7 +1131,6 @@ footer {
   .comboContainer .boxes {
     min-height: 500px;
     padding-bottom: 20px;
-    /* height: fit-content; */
   }
 
   .c2 .comboTitleBox {
@@ -1210,9 +1142,7 @@ footer {
     height: 420px;
   }
 
-  /* .conceptContainer{
-    flex-wrap:wrap ;
-  } */
+
   .conceptContainer {
     flex-direction: column;
     justify-content: center;
@@ -1438,12 +1368,4 @@ width:350px;
     height: 40px;
     margin: 50px 0px;
   }
-}
-
-/*   */
-.apps {
-  position: relative;
-  top: 1000px;
-  background-color: #238967;
-  height: 100vh;
 }
